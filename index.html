@@ -1,0 +1,59 @@
+<!-- INDEX.HTML DO PROJETO DE SIMULADOR DE PIANO -->
+<!-- POR RAFAEL_SOL_MAKER (RSM) -->
+<!-- EDITADO: 16/11/23 -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Piano</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <div class="main"></div>
+    <div class="piano">
+        <div class="panel">
+            <h1 class="title">Virtual Piano</h1>
+            <h3>por <a href="https://github.com/Rafael-Sol/">Rafael Sol Maker</a> (☀️RSM)</h3>
+            <div class="bottom-panel">
+                <div class="volume-label">Volume</div>
+                <div class="volume-control"><input type="range" class="volume" id="volume-slider" min="0" max="1" value="1" step="any"></div>
+                <div class="notes-label">Mostrar notas</div>
+                <div class="notes-control"><input type="checkbox" name="bbb" id="bbb" checked="true"></div>     
+            </div>
+        </div>
+    </div>
+
+    <div class="keyboard">
+           <div class="key white" id="C4" data-key="q"><div class="label-white"><p>C4</p><p>Dó</p><p>[Q]</p></div></div><!--
+        --><div class="key white" id="D4" data-key="w"><div class="label-white"><p>D4</p><p>Ré</p><p>[W]</p></div></div><!--
+        --><div class="key white" id="E4" data-key="e"><div class="label-white"><p>E4</p><p>Mi</p><p>[E]</p></div></div><!--
+        --><div class="key white" id="F4" data-key="r"><div class="label-white"><p>F4</p><p>Fá</p><p>[R]</p></div></div><!--
+        --><div class="key white" id="G4" data-key="t"><div class="label-white"><p>G4</p><p>Sol</p><p>[T]</p></div></div><!--
+        --><div class="key white" id="A4" data-key="y"><div class="label-white"><p>A4</p><p>Lá</p><p>[Y]</p></div></div><!--
+        --><div class="key white" id="B4" data-key="u"><div class="label-white"><p>B4</p><p>Si</p><p>[U]</p></div></div><!--
+        --><div class="key white" id="C5" data-key="i"><div class="label-white"><p>C5</p><p>Dó</p><p>[I]</p></div></div><!--
+        --><div class="key white" id="D5" data-key="o"><div class="label-white"><p>D5</p><p>Ré</p><p>[O]</p></div></div><!--
+        --><div class="key white" id="E5" data-key="p"><div class="label-white"><p>E5</p><p>Mi</p><p>[P]</p></div></div>
+        <div class="overlay">
+               <div class="key black" id="C#4" data-key="2"><div class="label-black"><p>C#4</p><p>Dó#</p><p>[2]</p></div></div><!--
+            --><div class="key black" id="D#4" data-key="3"><div class="label-black"><p>D#4</p><p>Ré#</p><p>[3]</p></div></div><!--
+            --><div class="key none " id=""    data-key=""> <div class="label-black"><p>   </p><p>   </p><p>   </p></div></div><!--
+            --><div class="key black" id="F#4" data-key="5"><div class="label-black"><p>F#4</p><p>Fá#</p><p>[5]</p></div></div><!--
+            --><div class="key black" id="G#4" data-key="6"><div class="label-black"><p>G#4</p><p>Sol#</p><p>[6]</p></div></div><!--
+            --><div class="key black" id="A#4" data-key="7"><div class="label-black"><p>A#4</p><p>Lá#</p><p>[7]</p></div></div><!--
+            --><div class="key none " id=""    data-key=""> <div class="label-black"><p>   </p><p>   </p><p>   </p></div></div><!--
+            --><div class="key black" id="C#5" data-key="9"><div class="label-black"><p>C#5</p><p>Dó#</p><p>[8]</p></div></div><!--
+            --><div class="key black" id="D#5" data-key="0"><div class="label-black"><p>D#5</p><p>Ré#</p><p>[9]</p></div></div><!--
+            --><div class="key none " id=""    data-key=""> <div class="label-black"><p>   </p><p>   </p><p>   </p></div></div><!--
+            -->
+        </div>
+    </div>
+    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <script defer src="src/main.js"></script>    
+</body>
+</html>
